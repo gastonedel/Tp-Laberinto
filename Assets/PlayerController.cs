@@ -7,11 +7,13 @@ public class PlayerController : MonoBehaviour
 
     public float movementSpeed;
     public float rotationSpeed;
+    private Rigidbody rb;
+    public float jumpHeight = 2.5f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -35,5 +37,13 @@ public class PlayerController : MonoBehaviour
         {
             transform.Rotate(0, rotationSpeed, 0);
         }
+        if (IsGrounded() && Input.GetKey(KeyCode.Space))
+        {
+            rb.velocity = Vector3.up * jumpHeight;
+        }
+    }
+    public bool IsGrounded()
+    {
+        return Physics.Raycast(transform.position, Vector3.down, 1.0f);
     }
 }
