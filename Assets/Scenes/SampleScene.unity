@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 16406076}
   m_Layer: 0
   m_Name: Paredes (29)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -235,7 +235,7 @@ GameObject:
   - component: {fileID: 52454674}
   m_Layer: 0
   m_Name: Paredes (20)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -436,7 +436,7 @@ GameObject:
   - component: {fileID: 135802387}
   m_Layer: 0
   m_Name: Paredes (28)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -544,7 +544,7 @@ GameObject:
   - component: {fileID: 137845105}
   m_Layer: 0
   m_Name: Paredes (16)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -721,7 +721,7 @@ GameObject:
   - component: {fileID: 172151115}
   m_Layer: 0
   m_Name: Paredes (48)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -829,7 +829,7 @@ GameObject:
   - component: {fileID: 176548323}
   m_Layer: 0
   m_Name: Paredes (24)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -937,7 +937,7 @@ GameObject:
   - component: {fileID: 185389950}
   m_Layer: 0
   m_Name: Paredes (59)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1044,7 +1044,7 @@ GameObject:
   - component: {fileID: 188119242}
   m_Layer: 0
   m_Name: Llegada
-  m_TagString: Untagged
+  m_TagString: victoria
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1138,6 +1138,8 @@ GameObject:
   - component: {fileID: 190399400}
   - component: {fileID: 190399402}
   - component: {fileID: 190399401}
+  - component: {fileID: 190399404}
+  - component: {fileID: 190399403}
   m_Layer: 0
   m_Name: Usuario
   m_TagString: Untagged
@@ -1230,7 +1232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e498b70733108ff4ba338de15963ba0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 0.2
+  movementSpeed: 0.1
   rotationSpeed: 4
   jumpHeight: 2.5
 --- !u!54 &190399400
@@ -1261,6 +1263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2feda9bac7ff544941c0ae3490104d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Salto: {fileID: 8300000, guid: 160399270e6a3d54ba77be8f30b33d10, type: 3}
 --- !u!82 &190399402
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1272,6 +1275,115 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 160399270e6a3d54ba77be8f30b33d10, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &190399403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190399394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec42c11516fa8b44198f227a8492c625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  golpe: {fileID: 8300000, guid: e50341ca6af4fc2459e87c7da5778bff, type: 3}
+--- !u!82 &190399404
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190399394}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e50341ca6af4fc2459e87c7da5778bff, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1372,7 +1484,7 @@ GameObject:
   - component: {fileID: 222713151}
   m_Layer: 0
   m_Name: Paredes (14)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1494,6 +1606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c2feda9bac7ff544941c0ae3490104d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Salto: {fileID: 0}
 --- !u!4 &314140871
 Transform:
   m_ObjectHideFlags: 0
@@ -1523,7 +1636,7 @@ GameObject:
   - component: {fileID: 320339800}
   m_Layer: 0
   m_Name: Paredes (12)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1631,7 +1744,7 @@ GameObject:
   - component: {fileID: 363972852}
   m_Layer: 0
   m_Name: Paredes (26)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1739,7 +1852,7 @@ GameObject:
   - component: {fileID: 372925849}
   m_Layer: 0
   m_Name: Paredes (30)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1847,7 +1960,7 @@ GameObject:
   - component: {fileID: 383486118}
   m_Layer: 0
   m_Name: Paredes (45)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1955,7 +2068,7 @@ GameObject:
   - component: {fileID: 471904617}
   m_Layer: 0
   m_Name: Paredes (32)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2063,7 +2176,7 @@ GameObject:
   - component: {fileID: 482914537}
   m_Layer: 0
   m_Name: Paredes (51)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2345,7 +2458,7 @@ GameObject:
   - component: {fileID: 607862460}
   m_Layer: 0
   m_Name: Paredes (8)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2453,7 +2566,7 @@ GameObject:
   - component: {fileID: 631057004}
   m_Layer: 0
   m_Name: Paredes
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2561,7 +2674,7 @@ GameObject:
   - component: {fileID: 693120414}
   m_Layer: 0
   m_Name: Paredes (1)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2761,7 +2874,7 @@ GameObject:
   - component: {fileID: 730794911}
   m_Layer: 0
   m_Name: Paredes
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2869,7 +2982,7 @@ GameObject:
   - component: {fileID: 730926090}
   m_Layer: 0
   m_Name: Paredes (44)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2977,7 +3090,7 @@ GameObject:
   - component: {fileID: 825448656}
   m_Layer: 0
   m_Name: Paredes (42)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3085,7 +3198,7 @@ GameObject:
   - component: {fileID: 828485235}
   m_Layer: 0
   m_Name: Paredes (54)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3193,7 +3306,7 @@ GameObject:
   - component: {fileID: 939761615}
   m_Layer: 0
   m_Name: Paredes (36)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3301,7 +3414,7 @@ GameObject:
   - component: {fileID: 1043256253}
   m_Layer: 0
   m_Name: Paredes (38)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3409,7 +3522,7 @@ GameObject:
   - component: {fileID: 1043310306}
   m_Layer: 0
   m_Name: Paredes (7)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3517,7 +3630,7 @@ GameObject:
   - component: {fileID: 1043492766}
   m_Layer: 0
   m_Name: Paredes (18)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3625,7 +3738,7 @@ GameObject:
   - component: {fileID: 1057865725}
   m_Layer: 0
   m_Name: Paredes (5)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3733,7 +3846,7 @@ GameObject:
   - component: {fileID: 1073448834}
   m_Layer: 0
   m_Name: Paredes (15)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3841,7 +3954,7 @@ GameObject:
   - component: {fileID: 1087922258}
   m_Layer: 0
   m_Name: Paredes (34)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3949,7 +4062,7 @@ GameObject:
   - component: {fileID: 1136171841}
   m_Layer: 0
   m_Name: Paredes (19)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4057,7 +4170,7 @@ GameObject:
   - component: {fileID: 1173896743}
   m_Layer: 0
   m_Name: Paredes (10)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4165,7 +4278,7 @@ GameObject:
   - component: {fileID: 1182973860}
   m_Layer: 0
   m_Name: Paredes (53)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4273,7 +4386,7 @@ GameObject:
   - component: {fileID: 1214865451}
   m_Layer: 0
   m_Name: Paredes (17)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4381,7 +4494,7 @@ GameObject:
   - component: {fileID: 1237144867}
   m_Layer: 0
   m_Name: Paredes (3)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4489,7 +4602,7 @@ GameObject:
   - component: {fileID: 1242173650}
   m_Layer: 0
   m_Name: Paredes (25)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4597,7 +4710,7 @@ GameObject:
   - component: {fileID: 1242589503}
   m_Layer: 0
   m_Name: Paredes (55)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4705,7 +4818,7 @@ GameObject:
   - component: {fileID: 1306390287}
   m_Layer: 0
   m_Name: Paredes (11)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4813,7 +4926,7 @@ GameObject:
   - component: {fileID: 1309336060}
   m_Layer: 0
   m_Name: Paredes (58)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4921,7 +5034,7 @@ GameObject:
   - component: {fileID: 1324242007}
   m_Layer: 0
   m_Name: Paredes (27)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5029,7 +5142,7 @@ GameObject:
   - component: {fileID: 1325563541}
   m_Layer: 0
   m_Name: Paredes (43)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5251,7 +5364,7 @@ GameObject:
   - component: {fileID: 1386041816}
   m_Layer: 0
   m_Name: Paredes (52)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5359,7 +5472,7 @@ GameObject:
   - component: {fileID: 1406620354}
   m_Layer: 0
   m_Name: Paredes (6)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5467,7 +5580,7 @@ GameObject:
   - component: {fileID: 1408325107}
   m_Layer: 0
   m_Name: Paredes
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5575,7 +5688,7 @@ GameObject:
   - component: {fileID: 1445460544}
   m_Layer: 0
   m_Name: Paredes (50)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5683,7 +5796,7 @@ GameObject:
   - component: {fileID: 1488340839}
   m_Layer: 0
   m_Name: Paredes (4)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5791,7 +5904,7 @@ GameObject:
   - component: {fileID: 1537419823}
   m_Layer: 0
   m_Name: Paredes (31)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5899,7 +6012,7 @@ GameObject:
   - component: {fileID: 1543088223}
   m_Layer: 0
   m_Name: Paredes (41)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6007,7 +6120,7 @@ GameObject:
   - component: {fileID: 1597477124}
   m_Layer: 0
   m_Name: Paredes (22)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6115,7 +6228,7 @@ GameObject:
   - component: {fileID: 1648863282}
   m_Layer: 0
   m_Name: Paredes (39)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6223,7 +6336,7 @@ GameObject:
   - component: {fileID: 1702187518}
   m_Layer: 0
   m_Name: Paredes (47)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6331,7 +6444,7 @@ GameObject:
   - component: {fileID: 1785030103}
   m_Layer: 0
   m_Name: Paredes (56)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6439,7 +6552,7 @@ GameObject:
   - component: {fileID: 1787818522}
   m_Layer: 0
   m_Name: Paredes (35)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6547,7 +6660,7 @@ GameObject:
   - component: {fileID: 1804135768}
   m_Layer: 0
   m_Name: Paredes
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6655,7 +6768,7 @@ GameObject:
   - component: {fileID: 1815202420}
   m_Layer: 0
   m_Name: Paredes (49)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6763,7 +6876,7 @@ GameObject:
   - component: {fileID: 1846689414}
   m_Layer: 0
   m_Name: Paredes (37)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6871,7 +6984,7 @@ GameObject:
   - component: {fileID: 1856339421}
   m_Layer: 0
   m_Name: Paredes (40)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6979,7 +7092,7 @@ GameObject:
   - component: {fileID: 1902118841}
   m_Layer: 0
   m_Name: Paredes (33)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7087,7 +7200,7 @@ GameObject:
   - component: {fileID: 1925108917}
   m_Layer: 0
   m_Name: Paredes (46)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7195,7 +7308,7 @@ GameObject:
   - component: {fileID: 2108119807}
   m_Layer: 0
   m_Name: Paredes
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7303,7 +7416,7 @@ GameObject:
   - component: {fileID: 2109339751}
   m_Layer: 0
   m_Name: Paredes (21)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7411,7 +7524,7 @@ GameObject:
   - component: {fileID: 2123420967}
   m_Layer: 0
   m_Name: Paredes (57)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7519,7 +7632,7 @@ GameObject:
   - component: {fileID: 2124634315}
   m_Layer: 0
   m_Name: Paredes (9)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7627,7 +7740,7 @@ GameObject:
   - component: {fileID: 2136066794}
   m_Layer: 0
   m_Name: Paredes (2)
-  m_TagString: Untagged
+  m_TagString: pared
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

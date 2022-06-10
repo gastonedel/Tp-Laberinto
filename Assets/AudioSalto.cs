@@ -5,7 +5,7 @@ using UnityEngine;
 public class AudioSalto : MonoBehaviour
 {
     AudioSource source;
-    AudioClip salto;
+    public AudioClip Salto;
 
     // Start is called before the first frame update
     void Start()
@@ -17,17 +17,13 @@ public class AudioSalto : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            source.clip = salto;
-        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            source.clip = Salto;
             source.Play();
+            Debug.Log("salto");
         }
-        else
-        {
-            source.Stop();
-        }
+
+
     }
 }
