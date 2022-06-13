@@ -12,7 +12,7 @@ public class While1 : MonoBehaviour
         while (contador < cloneAmount)
         {
             Instantiate(objectToClone);
-            cloneAmount++;
+            contador++;
         }
     }
 }
