@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -41,9 +42,16 @@ public class PlayerController : MonoBehaviour
         {
             rb.velocity = Vector3.up * jumpHeight;
         }
+
+        if (transform.position.y < 0)
+        {
+            SceneManager.LoadScene("Derrota");
+        }
     }
     public bool IsGrounded()
     {
         return Physics.Raycast(transform.position, Vector3.down, 1.0f);
     }
+
+  
 }
