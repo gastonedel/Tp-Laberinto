@@ -43,7 +43,7 @@ public class TimeManager : MonoBehaviour
             elapsedTime += Time.deltaTime;
         }
 
-        if (currentTime > 30)
+        if (currentTime > 100)
         {
             SceneManager.LoadScene("Derrota");
         }

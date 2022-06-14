@@ -30,5 +30,10 @@ public class collider : MonoBehaviour
         {
             SceneManager.LoadScene("Victoria");
         }
+
+        if(collision.gameObject.tag== "muerte")
+        {
+            SceneManager.LoadScene("Derrota");
+        }
     }
 }
